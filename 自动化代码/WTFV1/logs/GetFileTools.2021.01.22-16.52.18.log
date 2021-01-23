@@ -1,0 +1,56 @@
+2021-01-22 16:52:18,747 - GetFileTools - INFO - --------------------------------------------------------------
+
+2021-01-22 16:53:34,116 - GetFileTools - ERROR -  insert into spp_test_result(case_version,case_id,module_name,
+                    test_type,api_url,request_method,case_desc,case_params,expect,
+                    result_msg,error_msg,error_img_path) 
+                    values ("v1.0","add_property_03","property_manage","ui",
+                    "","","1. 点击【增加】
+2. 输入四条符合规格的必填项，一条必填项空缺
+3. 点击【增加】","{'property_name': '物业999', 'property_phone': '', 'property_intro': '不错', 'property_cred': '111', 'property_pwd': '1234'}",
+                    "增加失败","test_error","Traceback (most recent call last):
+  File "E:\PycharmProjects\GJH\WTFV1\testcase\property_manage_test.py", line 26, in test_add_property
+    actual = self.pm.get_add_property_actual(test_data)
+  File "E:\PycharmProjects\GJH\WTFV1\action\property_manage.py", line 98, in get_add_property_actual
+    actual_e = self.e.get_element('add_property_actual')
+  File "E:\PycharmProjects\GJH\WTFV1\tools\ui_util.py", line 223, in get_element
+    return self.ui.find_element(self.driver, attr)
+  File "E:\PycharmProjects\GJH\WTFV1\tools\ui_util.py", line 129, in find_element
+    return driver.find_element(getattr(By, elment_attr[0]), elment_attr[1])
+  File "E:\PycharmProjects\GJH\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "E:\PycharmProjects\GJH\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "E:\PycharmProjects\GJH\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div[2]"}
+  (Session info: chrome=87.0.4280.141)
+
+","../report/v1.0/screenshot2021.01.22-16.53.33.png");语句错误，执行失败-->(1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'E:\\PycharmProjects\\GJH\\WTFV1\\testcase\\property_manage_test.py", line 26, in test\' at line 6')
+2021-01-22 16:53:34,122 - GetFileTools - ERROR - sql执行错误
+2021-01-22 16:54:47,848 - GetFileTools - ERROR -  insert into spp_test_result(case_version,case_id,module_name,
+                    test_type,api_url,request_method,case_desc,case_params,expect,
+                    result_msg,error_msg,error_img_path) 
+                    values ("v1.0","property_search_by_phone_02","property_manage","ui",
+                    "","","1. 选择要查询的方式为【电话】
+2. 填入部分电话信息
+3. 点击搜索","{'property_phone': '1896'}",
+                    "查找失败","test_error","Traceback (most recent call last):
+  File "E:\PycharmProjects\GJH\WTFV1\testcase\property_manage_test.py", line 70, in test_property_search_by_phone
+    actual = self.pm.get_property_search_by_phone_actual(test_data)
+  File "E:\PycharmProjects\GJH\WTFV1\action\property_manage.py", line 198, in get_property_search_by_phone_actual
+    actual_e = self.e.get_element('property_search_by_phone_actual')
+  File "E:\PycharmProjects\GJH\WTFV1\tools\ui_util.py", line 223, in get_element
+    return self.ui.find_element(self.driver, attr)
+  File "E:\PycharmProjects\GJH\WTFV1\tools\ui_util.py", line 129, in find_element
+    return driver.find_element(getattr(By, elment_attr[0]), elment_attr[1])
+  File "E:\PycharmProjects\GJH\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "E:\PycharmProjects\GJH\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "E:\PycharmProjects\GJH\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[2]/div[2]/div[2]/div[2]/table/tbody/tr/td[4]/div"}
+  (Session info: chrome=87.0.4280.141)
+
+","../report/v1.0/screenshot2021.01.22-16.54.47.png");语句错误，执行失败-->(1064, 'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'E:\\PycharmProjects\\GJH\\WTFV1\\testcase\\property_manage_test.py", line 70, in test\' at line 6')
+2021-01-22 16:54:47,849 - GetFileTools - ERROR - sql执行错误

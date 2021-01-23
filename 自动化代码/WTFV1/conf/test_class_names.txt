@@ -1,0 +1,12 @@
+# gui测试模块
+WTFV1.testcase.lessor_homepage_test LessorHomepageTest
+WTFV1.testcase.property_manage_test PropertyManageTest
+WTFV1.testcase.tenant_personalinformation_test TenantPersonalInformationTest
+WTFV1.testcase.tenant_changebinding_test ChengeBindingTest
+#gui关闭页面代码
+WTFV1.testcase.gui_page_close_test GuiCloseTest
+#####################################################################
+# api 测试模块
+WTFV1.testcase.api_login_test ApiLoginTest
+WTFV1.testcase.api_lessor_test ApiLessorTest
+#
